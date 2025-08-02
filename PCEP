@@ -1,0 +1,92 @@
+num = 20
+result = num >> 2  # Right shift by 2 bits
+print("20 >> 2 =", result)  # Output: 5
+print("1&0 =",1&0)  # Output: 0
+print("1|0 =",1|0)  # Output: 1
+print("1^0 =",1^0)  # Output: 1
+print("1^1 =",1^1)  # Output: 0
+print("~1 =",~1)  # Output: -2
+print("~0 =",~0)  # Output: -1
+####
+number = int(input("Enter a number: "))
+condition = "\nEVEN" if number % 2 == 0 else "\nODD"
+print(condition)
+condition = "\nNEGATIVE" if number < 0 else "\nPOSITIVE"
+print(condition)
+
+distance = int(input("Enter a distance (in miles): "))
+age = int(input("Enter your age: "))
+if distance < 1000:
+    if age < 12:
+        print("$200")
+    elif age > 11 and age < 65:
+        print("$300")
+    elif age > 64:
+        print("$250")
+    else:
+        print("INVALID INPUT")
+else:
+    if age < 12:
+        print("$400")
+    elif age > 11 and age < 65:
+        print("$500")
+    elif age > 64:
+        print("$450")
+    else:
+        print("INVALID INPUT")
+####
+# PCEP - Python Certified Entry-Level Programmer
+# IF-ELSE.PY
+NUM1=int(input("Enter first number: "))
+NUM2=int(input("Enter second number: "))
+if NUM1 > NUM2:
+    print(NUM1 - NUM2)
+elif NUM1 < NUM2:
+    print(NUM1 + NUM2)
+else:
+    print(NUM1 * NUM2)
+print()
+# Leap Year Check
+print("Leap Year Check\n________________________")
+YEAR=int(input("Enter year: "))
+if YEAR % 100 == 0 and YEAR % 400 == 0:
+    print("IT IS A LEAP YEAR")
+elif YEAR % 100 != 0 and YEAR % 4 == 0:
+    print("IT IS A LEAP YEAR")
+else:
+    print("NOT A LEAP YEAR")
+print()
+####
+print("Literals in Python\n________________________")
+print("James says,","Come here!",".")
+print("James says,\"Come here!\".")
+print("James says,\'Come here!\'.")
+print("James says\rCome here!.")
+print("James says\tCome here!.")
+####
+#Octal
+print("\nOctal\n________________________")
+print("0o123 =",0o123)
+print("(1*8^2)+(2*8^1)+(3*8^0)")
+#Hexadecimal
+print("\nHexadecimal\n________________________")
+print("0x1A =",0x1A)
+print("(1*16^1)+(10*16^0)")
+print("0xFF =",0xFF)
+#Exponential Notation
+print("\nExponential Notation\n________________________")
+print("1.23e4 =",1.23e4)
+print("(1.23*10^4)")
+####
+import time
+
+print("**With backslash r**")
+for i in range(5):
+    print(f"\rLoading {i}", end="")
+    time.sleep(1)
+print("\n")
+
+print("**Without backslash r**")
+for i in range(5):
+    print(f"Loading {i}", end="")
+    time.sleep(1)
