@@ -1,0 +1,6 @@
+print("Literals in Python\n________________________")
+print("James says,","Come here!",".")
+print("James says,\"Come here!\".")
+print("James says,\'Come here!\'.")
+print("James says\rCome here!.")
+print("James says\tCome here!.")

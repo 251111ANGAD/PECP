@@ -1,0 +1,9 @@
+num = 20
+result = num >> 2  # Right shift by 2 bits
+print("20 >> 2 =", result)  # Output: 5
+print("1&0 =",1&0)  # Output: 0
+print("1|0 =",1|0)  # Output: 1
+print("1^0 =",1^0)  # Output: 1
+print("1^1 =",1^1)  # Output: 0
+print("~1 =",~1)  # Output: -2
+print("~0 =",~0)  # Output: -1
